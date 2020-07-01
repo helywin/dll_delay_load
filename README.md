@@ -6,7 +6,18 @@ delay load dll in subdirectory by using function `SetDllDirectory`
 
 # BUILD
 
-using msvc compiler with cmake, build target `deploy`
+run `x64 Native Tools Command Prompt for VS 201x` in start menu to setup msvc compiler environment
+
+cd to project dir
+
+run these commands:
+
+```batch
+md build
+cd build
+cmake .. -G"Ninja"
+ninja deploy
+```
 
 # RESULT
 
